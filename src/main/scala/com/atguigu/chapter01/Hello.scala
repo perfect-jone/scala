@@ -14,11 +14,13 @@ package com.atguigu.chapter01
 * Crrl+Shift+W  选择当前光标位置单词并扩大
 * Shift+Shift 查找当前项目中的任何文件
 * Shit+Alt+↓ 当前行和下一行切换位置
+* Ctrl+Alt+T  try catch if for while快捷键
+*
 * psvm  java main函数快捷键
 * sout  java 打印输出快捷键
 * Ctrl+Alt+A  git add添加至暂存区
 * Ctrl+K      git commit提交至本地版本库
-* Ctrl+Alt+K  git push推送到远程库
+* Ctrl+Shift+K  git push推送到远程库
 */
 
 
