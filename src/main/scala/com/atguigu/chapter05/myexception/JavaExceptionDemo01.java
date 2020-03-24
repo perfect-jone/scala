@@ -11,7 +11,6 @@ public class JavaExceptionDemo01 {
             e.printStackTrace();
         } finally {
             System.out.println("java finally");
-
         }
     }
 }
