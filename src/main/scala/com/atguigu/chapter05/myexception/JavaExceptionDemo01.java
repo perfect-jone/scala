@@ -7,7 +7,9 @@ public class JavaExceptionDemo01 {
             int b = 10;
             int c = b / i;
 
-        } catch (Exception e) {
+        } catch(ArithmeticException ex){
+            ex.printStackTrace();
+        }catch (Exception e) {
             e.printStackTrace();
         } finally {
             System.out.println("java finally");
