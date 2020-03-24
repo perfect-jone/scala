@@ -14,6 +14,7 @@ package com.atguigu.chapter01
 * Crrl+Shift+W  选择当前光标位置单词并
 * Shift+Shift 查找当前项目中的任何文件
 * psvm  java main函数快捷键
+* sout  java 打印输出快捷键
 */
 
 object Hello {
