@@ -8,7 +8,7 @@ object Cat {
     cat.name = "小白"
     cat.age = 8
     cat.color = "白色"
-    ////在scala底层,cat.name 其实就是cat.name(),对应的是java中的getter方法
+    //在scala底层,cat.name 其实就是cat.name(),对应的是java中的getter方法
     println("ok")
     printf("小猫的信息如下：%s %d %s",cat.name,cat.age,cat.color)
   }
