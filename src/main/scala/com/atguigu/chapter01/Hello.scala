@@ -9,12 +9,11 @@ package com.atguigu.chapter01
 * Ctrl+Shift+F10  运行代码
 * Ctrl+F12  查看当前类的所有方法
 * Ctrl+P  查看方法提示
-* Ctrl+Shift+Enter  自动补全
 * Ctrl+W  选择当前光标位置单词并扩大
 * Ctrl+Shift+W  选择当前光标位置单词并扩大
-* Shift+Shift 查找当前项目中的任何文件
 * Shit+Alt+↓ 当前行和下一行切换位置
 * Ctrl+Alt+T  try catch if for while快捷键
+* Shift+Shift 查找当前项目中的任何文件
 * Ctrl+Shift+F  整个项目中快速查找该字符串出现的所有位置
 *
 * psvm  java main函数快捷键
