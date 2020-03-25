@@ -13,7 +13,7 @@ object LazyDemo01 {
     lazy val num = 10
     lazy val  res = sum(10,20)
     println("-------------------")
-    println("res="+res)//要在使用res前才执行
+    println("res="+res)//要在使用res时才执行sum方法
   }
 
   def sum(n1: Int, n2: Int): Int = {
