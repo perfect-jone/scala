@@ -15,6 +15,7 @@ package com.atguigu.chapter01
 * Shift+Shift 查找当前项目中的任何文件
 * Shit+Alt+↓ 当前行和下一行切换位置
 * Ctrl+Alt+T  try catch if for while快捷键
+* Ctrl+Shift+F  整个项目中快速查找该字符串出现的所有位置
 *
 * psvm  java main函数快捷键
 * sout  java 打印输出快捷键
