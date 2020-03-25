@@ -6,7 +6,7 @@ object ThrowDemo {
       val res = test()
       println(res.toString)
     } catch {
-      case e => println("捕获到了异常"+ e.getMessage)
+      case e: Exception => println("捕获到了异常"+ e.getMessage)
     }
   }
 
