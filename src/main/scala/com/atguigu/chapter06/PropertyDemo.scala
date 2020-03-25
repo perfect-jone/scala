@@ -2,6 +2,8 @@ package com.atguigu.chapter06
 
 object PropertyDemo {
   def main(args: Array[String]): Unit = {
+    //创建对象的基本语法
+    //val | var 对象名[: 类型] = new 类型()
     val p1 = new Person
     println(p1.sal)
     println(p1.address )
