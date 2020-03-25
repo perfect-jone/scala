@@ -1,4 +1,4 @@
-package com.atguigu.chapter06
+package com.atguigu.chapter06.oop
 
 object PropertyDemo {
   def main(args: Array[String]): Unit = {
