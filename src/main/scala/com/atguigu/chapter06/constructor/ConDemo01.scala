@@ -32,8 +32,8 @@ class Person(inName: String, inAge: Int) {
 
   def this(name: String) {
     //辅助构造器必须在第一行显式调用主构造器
-    this("jack",10)
-    this.name = name//重新赋值
+    this("jack", 10)
+    this.name = name //重新赋值
   }
 }
 
