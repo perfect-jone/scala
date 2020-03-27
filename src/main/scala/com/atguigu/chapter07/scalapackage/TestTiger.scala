@@ -8,7 +8,7 @@ package com.atguigu.chapter07.scalapackage.hello2
   * 3.控制访问范围
   * 4.可以对类的功能进行扩展
   * 包的本质就是分不同的文件夹来保存文件
-  * 包名的命名规范：com.公司名.项目名.业务模块名，com.dhcc.snjk.user
+  * 包名的命名规范：com.公司名.项目名.业务模块名，com.pingan.finance.bank
   */
 object TestTiger {
   def main(args: Array[String]): Unit = {

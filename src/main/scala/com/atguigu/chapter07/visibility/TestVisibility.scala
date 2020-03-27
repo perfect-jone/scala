@@ -11,6 +11,8 @@ package com.atguigu.chapter07.visibility
 object TestVisibility {
   def main(args: Array[String]): Unit = {
     val physicist = new Physicist
+    //physicist.age 被private修饰，只在类的内部和伴生对象中可用
+    //physicist.sal 被protected修饰，只能在所有子类、类的内部和伴生对象中可用
     physicist.showInfo()
     Physicist.test(physicist)
 
@@ -23,7 +25,8 @@ object Physicist{
   def test(physicist: Physicist): Unit ={
     //在伴生对象中，可以访问physicist.name和physicist.age
 
-    println(physicist.name+"\t"+physicist.age)
+    //private为私有权限，只在类的内部和伴生对象中可用
+    println(physicist.name+"\t"+physicist.age+"\t"+physicist.sal)
   }
 }
 
@@ -39,7 +42,9 @@ class Physicist{
   protected var sal: Double = 9999.99
 
   def showInfo(): Unit ={
-    println(name+"\t"+age)
+
+    //private为私有权限，只在类的内部和伴生对象中可用
+    println(name+"\t"+age+"\t"+sal)
   }
 }
 

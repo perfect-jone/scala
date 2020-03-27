@@ -2,9 +2,9 @@
 
 /**
   * 1.package com.atguigu{}表示创建了包com.atguigu,在{}中可以继续写它的子包scala,com.atguigu.scal,还可以写类，特质trait,object
-  * 2.scala支持在一个文件中，可以同时创建多个包，包中有包，以及给各个包创建类,trait,object
+  * 2.scala支持在一个文件中，可以同时创建多个包，包中有包，但建议最好不要超过3层，以及给各个包创建类,trait,object
   * 3.作用域原则：可以直接向上访问，大括号体现作用域,scala中子包直接访问父包中的内容,java访问父类需要import
-  * 4.父包要访问子包是，需要import对应的类
+  * 4.父包要访问子包时，需要import对应的类
   * 5.包名可以用相对路径也可以用绝对路径，包名冲突时可以用绝对路径解决
   * 6.包对象：包中不可以直接写方法或定义变量，为了弥补Java虚拟机的不足，scala中引入了包对象的概念
   */
@@ -60,6 +60,8 @@ package com.atguigu {
 
     class Person {
       val name = "Jone"
+      println(name)
+      sayHi()
 
       def paly(message: String): Unit = {
         println(this.name + " " + message)

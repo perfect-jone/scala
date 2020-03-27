@@ -1,7 +1,7 @@
 package com.atguigu.chapter07.visibility
 
 import scala.beans._
-import scala.collection.mutable//表示将该包的所有内容引入，等价*
+import scala.collection.mutable._  //表示将该包的所有内容引入，等价*
 object Details {
   def main(args: Array[String]): Unit = {
 
@@ -9,7 +9,7 @@ object Details {
 }
 
 class User {
-  import scala.beans.BeanProperty
+  import scala.beans.BeanProperty //包可以在一个文件的任意位置引入
   @BeanProperty
   var name: String = ""
 
