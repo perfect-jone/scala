@@ -8,16 +8,15 @@ object BankDemo {
     account.withDrawal("62270015", "123456", 100)
     println()
     account.deposit("62270015", "123456", 100)
-
   }
 }
 
 //编写一个Account类
 class Account(inAccount: String, inPassword: String,inBalance: Double) {
   //属性
-  val accountNo: String = inAccount
-  var balance: Double = inBalance
-  var password: String = inPassword
+  private val accountNo: String = inAccount
+  private var balance: Double = inBalance
+  private var password: String = inPassword
 
   //方法
 
