@@ -29,9 +29,8 @@ git push -u origin master 关联后，使用命令第一次推送master分支的
 git push origin master 此后，每次本地提交后，只要有必要，就可以使用命令推送最新修改
 
 ***************************************************
-git@github.com: Permission denied (publickey).
+git关联不到gitHub，报错：git@github.com: Permission denied (publickey).
 fatal: Could not read from remote repository.
-
 Please make sure you have the correct access rights
 and the repository exists.
 
@@ -41,6 +40,14 @@ and the repository exists.
 3.在github中 Settings-->SSH and GPG keys-->New SSH key中添加复制的公钥
 
 
+***************************************************
 
+git版本库push到gitHub,报错：SSL certificate problem:self signed certificate in certificate chain。
+解决方案：打开git的控制端黑窗口(Git Bash Here)，输入：
+git config --global http.sslVerify false
+点击Entry之后，就会去掉git的ssl验证。
+
+然后就可以正常从git版本库push到gitHub。
 
 ***************************************************
+
