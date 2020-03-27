@@ -4,7 +4,6 @@ import scala.beans._
 import scala.collection.mutable._  //表示将该包的所有内容引入，等价*
 object Details {
   def main(args: Array[String]): Unit = {
-
   }
 }
 
