@@ -1,0 +1,17 @@
+1.trait的声明：
+    trait 特质名{
+        trait体
+    }
+2.trait = interface + abstract class
+3.Cloneable/Serializable 就是scala的特质
+4.trait的使用：
+                没有父类：class 类名 extend trait1 with trait2 with trait3 ...
+                有父类：  class 类名 extend 父类 with trait1 with trait2 with trait3 ...
+5.当一个trait中既有抽象方法又有具体方法时，class Person extends Trait{
+                                                def work()
+                                                def play(): Unit = {
+                                                    println("这是一个具体方法")
+                                                }
+                                           }
+如果要使用work(),在底层对应：public class Person implements Trait.
+如果要使用play(),在底层对应：public abstract class Trait$class.
