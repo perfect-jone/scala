@@ -30,7 +30,7 @@ abstract class Animal {
   //抽象字段
   var color: String = "black" //普通字段
 
-  def cry() //抽象方法，用abstract修饰会报错
+  def cry() //抽象方法，用abstract修饰运行会报错
 
   //可以有实现的方法
   def laugh(): Unit = {
