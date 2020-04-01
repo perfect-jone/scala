@@ -9,7 +9,7 @@ object Exercise04 extends App {
 }
 
 object Suits extends Enumeration {
-  type Suits = Value
+  type Suits = Value//给Value取了别名Suits
   val Spade = Value("♠")
   val Club = Value("♣")
   val Heart = Value("♥")
