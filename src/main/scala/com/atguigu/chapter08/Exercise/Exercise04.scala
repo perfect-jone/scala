@@ -15,12 +15,14 @@ object Suits extends Enumeration {
   val Heart = Value("♥")
   val Diamond = Value("♦")
 
-  override def toString(): String = {
-    Suits.values.mkString(",")
-  }
+  override def toString() = Suits.values.mkString(",")
 
-  def isRed(card: Suits) = {
-    card == Heart || card == Diamond
-  }
+  def isRed(card: Suits) = (card == Heart || card == Diamond)
+
+  //等价于
+  /*  def isRed(card: Suits): Boolean = {
+      if(card == Heart || card == Diamond) true
+    }*/
+
 }
 
