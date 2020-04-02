@@ -9,7 +9,9 @@ object TraitDemo01 {
   }
 }
 
-class A {}
+class A {
+  println("A")
+}
 
 class B extends A {}
 class C extends A with Trait01 {
@@ -18,7 +20,9 @@ class C extends A with Trait01 {
   }
 }
 
-class D {}
+class D {
+  println("D")
+}
 
 class E extends D with Trait01 {
   override def getConnect(): Unit = {
