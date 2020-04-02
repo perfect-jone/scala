@@ -8,10 +8,12 @@ object SingleTon {
   }
 }
 
+//构造方法私有化，不让外界创建对象
 class Dog private() {
 
 }
 
+//伴生对象和apply方法
 object Dog {
   var sinleDog: Dog = null
   def apply(): Dog = {
