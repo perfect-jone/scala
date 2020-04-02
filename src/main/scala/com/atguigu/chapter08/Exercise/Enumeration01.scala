@@ -9,7 +9,7 @@ object Enumeration01 {
 }
 
 object Weekday extends Enumeration {
-  type Weekday = Value
+  type Weekday = Value  //给Value取个别名Weekday
   val Mon = Value("1")
   val Tue = Value("2")
   val Wed = Value("3")
