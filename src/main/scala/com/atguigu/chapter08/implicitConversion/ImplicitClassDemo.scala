@@ -12,6 +12,7 @@ object ImplicitClassDemo {
 
     val mySQL = new MySQL1
     mySQL.sayOk
+    mySQL.addSuddix()
     println(mySQL.addSuddix()) //DB1$1(mySQL).addSuddix()
 
   }

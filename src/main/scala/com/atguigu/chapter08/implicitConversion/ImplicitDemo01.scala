@@ -7,11 +7,11 @@ object ImplicitDemo01 {
 
     //编写一个隐式函数 Double --> Int
 
-    implicit def Double2Int(d: Double):Int = {
+    implicit def double2Int(d: Double):Int = {
       d.toInt
     }
 
-    //底层编译 Double2Int$1(3.5D)
+    //底层编译 double2Int$1(3.5D)
     val num : Int = 3.5
     val num2 : Int = 7.99
     println(num)
