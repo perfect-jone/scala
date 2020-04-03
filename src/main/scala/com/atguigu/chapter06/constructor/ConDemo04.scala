@@ -20,12 +20,12 @@ class Worker(inName: String) {
   var name = inName
 }
 
-//主构造器的参数被val修饰，那么inName就是private的只读属性
+//主构造器的参数被val修饰，那么inName就是只读属性
 class Worker2(val inName: String) {
   var name = inName
 }
 
-//主构造器的参数被val修饰，那么inName就是private的可读写属性
+//主构造器的参数被val修饰，那么inName就是可读写属性
 class Worker3(var inName: String) {
   var name = inName
 }
