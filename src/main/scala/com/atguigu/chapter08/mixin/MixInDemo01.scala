@@ -3,6 +3,7 @@ package com.atguigu.chapter08.mixin
 object MixInDemo01 {
   def main(args: Array[String]): Unit = {
     //在不修改类的定义基础上，让下面两个类使用trait中的方法,动态混入
+    //ocp原则：open close principle
     val b = new OracleDB with Operate3
     b.insert(100)
     val l = new MySQL with  Operate3
