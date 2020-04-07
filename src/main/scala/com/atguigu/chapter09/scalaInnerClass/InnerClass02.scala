@@ -1,4 +1,4 @@
-package com.atguigu.chapter08.scalaInnerClass
+package com.atguigu.chapter09.scalaInnerClass
 
 object InnerClass02 {
   def main(args: Array[String]): Unit = {

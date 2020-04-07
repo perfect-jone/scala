@@ -1,4 +1,4 @@
-package com.atguigu.chapter08.implicitConversion
+package com.atguigu.chapter09.implicitConversion
 
 object ImplicitValDemo01 {
   def main(args: Array[String]): Unit = {

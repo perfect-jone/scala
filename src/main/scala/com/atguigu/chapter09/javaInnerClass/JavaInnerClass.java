@@ -1,4 +1,4 @@
-package com.atguigu.chapter08.javaInnerClass;
+package com.atguigu.chapter09.javaInnerClass;
 
 public class JavaInnerClass {
     public static void main(String[] args) {

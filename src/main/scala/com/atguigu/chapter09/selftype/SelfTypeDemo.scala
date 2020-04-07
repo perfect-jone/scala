@@ -1,4 +1,4 @@
-package com.atguigu.chapter08.selftype
+package com.atguigu.chapter09.selftype
 
 object SelfTypeDemo {
   def main(args: Array[String]): Unit = {

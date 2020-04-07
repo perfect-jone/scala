@@ -1,4 +1,4 @@
-package com.atguigu.chapter08.implicitConversion
+package com.atguigu.chapter09.implicitConversion
 
 //自动转换：低精度-->高精度   Int --> Double
 //隐式转换：高精度-->低精度   Double --> Int
