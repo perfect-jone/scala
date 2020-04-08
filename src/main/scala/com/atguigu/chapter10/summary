@@ -1,5 +1,0 @@
-1.scala同时支持不可变集合和可变集合，不可变集合可以安全的并发访问
-2.两个主要的包：scala.collection.immutable
-                scala.collection.mutable
-3.scala默认采用不可变集合，对于几乎所有的集合类，scala同时提供了可变和不可变的版本
-4.scala的集合有三大类：序列Seq、集合Set、映射Map，所有的集合都扩展了Iterable特质

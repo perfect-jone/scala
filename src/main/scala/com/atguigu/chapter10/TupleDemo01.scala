@@ -1,5 +1,4 @@
-package com.atguigu.chapter10.tuple
-
+package com.atguigu.chapter10
 
 object TupleDemo01 {
   def main(args: Array[String]): Unit = {

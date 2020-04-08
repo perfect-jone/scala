@@ -21,7 +21,7 @@ object ListDemo01 {
     println(list(0))
 
     println("============追加元素====================")
-    //追加元素：3中方式
+    //追加元素：3种方式
     //向列表中增加元素，会返回新的列表/集合对象
     //注意：本身的集合还是不可变集合，并没有改变
     val list3 = List(1,2)
@@ -33,7 +33,7 @@ object ListDemo01 {
 
     // ：：符号表示向集合中 新建集合添加元素
     val list6 = List(6,7)
-    //把8,9元素和list6集合从右向左依次放进Nil空集合中
+    //把8,9元素和list6集合从右向左依次放进Nil空集合中，先放的在最右边
     val list7 = 8 :: 9 :: list6 :: Nil
     println("list7="+list7)  //list7=List(8, 9, List(6, 7))
 
