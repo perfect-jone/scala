@@ -13,6 +13,7 @@ public class JavaMapDemo {
         hashMap.put(3, "小周");
         hashMap.put(4, "小黑");
         hashMap.put(5, "小花");
+        hashMap.put(5, "小花");//Map是不重复的
         //hashMap.put(null,null); HashMap的键值对可以全为null，但必须键值对都是String类型才能遍历
         System.out.println(hashMap.entrySet());//[1=小明, 2=小红, 3=小周, 4=小黑, 5=小花]
         System.out.println(hashMap.keySet());//[1, 2, 3, 4, 5]

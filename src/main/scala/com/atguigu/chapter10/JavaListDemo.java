@@ -20,6 +20,8 @@ public class JavaListDemo {
         list.add("Friday");
         list.add("Saturday");
         list.add("Sunday");
+        list.add("Sunday");//List是有序重复的
+        list.add(null);
         // 3种遍历方式
         System.out.println("===========1、for循环==================");
         for (int i = 0; i < list.size(); i++) {
