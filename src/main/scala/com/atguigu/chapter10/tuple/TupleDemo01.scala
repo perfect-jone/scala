@@ -6,7 +6,7 @@ object TupleDemo01 {
 
     //元祖中最大可以放22个元素,类型是Tuple4,根据元素个数的不同对应不同的元祖类型,分别是Tuple1-Tuple22
 
-    //1.创建元祖
+    //1.创建元组
     val tuple01 = (1, "jone", 99.99, 's')
     println(tuple01)
     /*
@@ -15,7 +15,7 @@ object TupleDemo01 {
      *
      * */
     println("==========================================")
-    //2.访问元祖
+    //2.访问元组
     println(tuple01._1) //使用 _1访问第一个元素,从1开始
 
     /*  override def productElement(n: Int) = n match {
@@ -28,7 +28,7 @@ object TupleDemo01 {
     println(tuple01.productElement(2)) //使用productElement(下标，从0开始)访问元素
 
     println("==========================================")
-    //3.遍历元祖
+    //3.遍历元组
     for (i <- tuple01.productIterator) {
       println(i)
     }
