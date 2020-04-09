@@ -60,5 +60,6 @@ object HashMapDemo02 {
     for (k <- map2.keys) println(k)
     for (v <- map2.values) println(v)
     for (item <- map2) println(item + " key=" + item._1 + " value=" + item._2) //Tuple2
+    for (item <- map2) println(item) //Tuple2
   }
 }
