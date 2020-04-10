@@ -1,5 +1,4 @@
-package com.atguigu.chapter11.map
-
+package com.atguigu.chapter11
 
 object ReduceDemo01 {
   def main(args: Array[String]): Unit = {

@@ -1,4 +1,4 @@
-package com.atguigu.chapter11.map
+package com.atguigu.chapter11
 
 /**
   * flatmap:扁平化映射，就是将集合中每个元素的子元素映射到某个函数并返回新的集合

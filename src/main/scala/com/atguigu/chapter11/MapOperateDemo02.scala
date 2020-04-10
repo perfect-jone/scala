@@ -1,4 +1,4 @@
-package com.atguigu.chapter11.map
+package com.atguigu.chapter11
 
 object MapOperateDemo02 {
   def main(args: Array[String]): Unit = {
