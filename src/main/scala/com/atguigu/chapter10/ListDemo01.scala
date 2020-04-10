@@ -8,7 +8,7 @@ object ListDemo01 {
   def main(args: Array[String]): Unit = {
     //默认情况下List是 scala.collection.immutable.List包下,这个包在package object scala{}包对象下声明了，所以可以直接使用
     //如果需要使用可变的List，可以使用ListBuffer
-    val list = List(1, 2, 3,"hello")
+    val list = List(1, 2, 3,"hello",3)
     val list2 = Nil //空集合
     for (i <- list) {
       println(i)

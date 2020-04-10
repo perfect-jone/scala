@@ -14,7 +14,6 @@ object HashMapDemo01 {
     //在底层，每对key-value是Tuple2类型，遍历用productIterator()方法，获取key用 ._1方法，获取value用 ._2方法
     val map = Map("lee" -> 30, "pan" -> 20, "jone" -> "西安", 1 -> 4)
     println("map="+map)
-
     //构建可变Map
     val map2 = mutable.Map("lee" -> 30, "pan" -> 20, "jone" -> "西安", 1 -> 4)
     println("map2"+map2) //无序

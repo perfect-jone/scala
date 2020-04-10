@@ -15,8 +15,7 @@ object ListBufferDemo01 {
 
     val lb1 = new ListBuffer[Int]
     lb1 += 3
-    lb1.append(4)
-    lb1 -= 4
+    lb1 -= 4 //key不存在也不会报错
     println("lb1="+lb1)
 
 
