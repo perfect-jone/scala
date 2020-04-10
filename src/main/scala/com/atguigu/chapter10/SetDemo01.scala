@@ -9,7 +9,9 @@ object SetDemo01 {
 
     val set2 = mutable.Set(1,2,"hello","world")
     set2 += 3
-    set2 -= 4//key不存在也不会报错
+    set2.add(5)
+    set2 -= 4 //key不存在也不会报错
+    println(set2(3))
     println(set2)
     for (i <- set2) {
       print(i+"\t")

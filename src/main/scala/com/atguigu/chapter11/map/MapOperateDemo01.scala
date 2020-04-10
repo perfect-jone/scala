@@ -1,4 +1,4 @@
-package com.atguigu.chapter11
+package com.atguigu.chapter11.map
 
 object MapOperateDemo01 {
   def main(args: Array[String]): Unit = {
@@ -18,6 +18,8 @@ object MapOperateDemo01 {
       * 3    * 2       6
       * 5              10
       */
+
+    //final override def map[B, That](f: A => B)(implicit bf: CanBuildFrom[List[A], B, That]): That
     val list2 = list.map(multiple)
     println(list2)
   }
