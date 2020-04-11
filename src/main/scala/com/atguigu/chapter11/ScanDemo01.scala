@@ -3,7 +3,8 @@ package com.atguigu.chapter11
 object ScanDemo01 {
   def main(args: Array[String]): Unit = {
     //扫描 scanLeft scan scanRight
-    val list = List(1,2,3,4)
+    val list = List(1, 2, 3, 4)
+
     def minus(n1: Int, n2: Int): Int = {
       n1 - n2
     }

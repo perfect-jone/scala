@@ -8,19 +8,28 @@ object FoldDemo01 {
       */
 
     //折叠
-    val list = List(1,2,3,4)
-    def minus(n1: Int, n2: Int): Int = {
+    val list = List(1, 2, 3, 4)
+
+    //函数的柯里化：把多个参数的函数等价转化成单个函数的级联
+    def minus(n1: Int, n2: Int) = {
       n1 - n2
     }
 
+    def minusCurry(n1: Int)(n2: Int) = {
+      n1 - n2
+    }
+
+    println(minus(4, 3))
+    println(minusCurry(4)(3))
+
     // 可以理解为 List(5,1,2,3,4) list.reduceLeft(minus)
     println(list.foldLeft(5)(minus)) //函数的柯里化
-    val listLeft = (5 /: list)(minus)  //foldLeft的简写形式 /:
+    val listLeft = (5 /: list) (minus) //foldLeft的简写形式 /:
     println(listLeft)
 
     // 可以理解为 List(5,1,2,3,4) list.reduceRight(minus)
     println(list.foldRight(5)(minus))
-    val listRight = (list :\ 5)(minus)  //foldRight的简写形式 :\
+    val listRight = (list :\ 5) (minus) //foldRight的简写形式 :\
     println(listRight)
 
   }

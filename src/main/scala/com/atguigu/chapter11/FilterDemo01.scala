@@ -12,7 +12,7 @@ object FilterDemo01 {
     println(newName)
   }
 
-  def startA(s: String):Boolean = {
+  def startA(s: String): Boolean = {
     s.startsWith("A")
   }
 }

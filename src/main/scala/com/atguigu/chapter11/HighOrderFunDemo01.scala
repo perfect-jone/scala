@@ -15,14 +15,15 @@ object HighOrderFunDemo01 {
 
     // _ 表示可以把一个函数直接赋值给一个变量，但是不执行函数
     val f1 = myPrint _ //f1类型为() => Unit
-    val f2 = myPrint   // 不加 _ 的类型为()，表示将myPrint执行的结果赋给f2
+    val f2 = myPrint // 不加 _ 的类型为()，表示将myPrint执行的结果赋给f2
 
-    f1()//函数名+括号表示执行该函数
+    f1() //函数名+括号表示执行该函数
   }
 
-  def myPrint(): Unit ={
+  def myPrint(): Unit = {
     println("I love coding!")
   }
+
   // test 高阶函数
   // f: Double => Double 函数签名 表示该函数可以接收一个Double类型的值，返回也是Double
   // n1: Double 普通参数
