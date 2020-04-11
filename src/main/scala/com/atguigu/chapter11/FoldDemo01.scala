@@ -3,7 +3,7 @@ package com.atguigu.chapter11
 object FoldDemo01 {
   def main(args: Array[String]): Unit = {
     /**
-      * fold 折叠函数 将上一步返回的值作为函数的第一个参数继续传递参与运算，知道集合中的所有元素被遍历
+      * fold 折叠函数 将上一步返回的值作为函数的第一个参数继续传递参与运算，直到集合中的所有元素被遍历
       * 可以把reduceLeft看成简化版的foldLeft
       */
 
