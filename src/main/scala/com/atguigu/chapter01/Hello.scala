@@ -16,6 +16,7 @@ package com.atguigu.chapter01
 * Shift+Shift 查找当前项目中的任何文件
 * Ctrl+Shift+F  整个项目中快速查找该字符串出现的所有位置
 * Alt+Insert 快速新建类
+* Ctrl+F  Ctrl+R 当前页查找替换
 *
 * psvm  java main函数快捷键
 * sout  java 打印输出快捷键
