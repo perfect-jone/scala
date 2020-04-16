@@ -25,11 +25,11 @@ object GoodsDiscount {
     println(price(sale))
   }
 
-  def price(it: Item): Double = {
-    it match {
+  def price(item: Item): Double = {
+    item match {
       case Book(_, price) => price
-      // its.map(price _).sum 表示 将its集合遍历，然后逐个调用price方法，之后将所有拿到的price进行sum操作
-      case Bundle(_, discount, its@_*) => its.map(price _).sum - discount
+      // items.map(price _).sum 表示 将items集合遍历，然后逐个调用price方法，之后将所有拿到的price进行sum操作
+      case Bundle(_, discount, items@_*) => items.map(price _).sum - discount
     }
   }
 }
