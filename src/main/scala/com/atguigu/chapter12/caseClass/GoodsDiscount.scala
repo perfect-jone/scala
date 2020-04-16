@@ -38,6 +38,6 @@ abstract class Item
 
 case class Book(description: String, price: Double) extends Item
 
-// Item是Book和Bundle的父类，因为item: Item*中的item可以为Book或Bundle的一个或多个对象
+// Item是Book和Bundle的父类，因此item: Item*(可变参数) 中的item可以为Book或Bundle的一个或多个对象
 case class Bundle(description: String, price: Double, item: Item*) extends Item
 
