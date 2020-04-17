@@ -22,6 +22,7 @@ object PartialFunctionLogogram {
     println(list1)
 
     // 第二种简写形式
+    //将包在大括号内的一组case语句封装为函数，使用collect方法，称为偏函数
     val list2 = list.collect {
       case x: Int => x + 1
       case x: Double => (x * 3).toInt
