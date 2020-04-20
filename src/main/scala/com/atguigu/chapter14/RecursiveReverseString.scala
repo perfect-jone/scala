@@ -9,7 +9,6 @@ object RecursiveReverseString {
       else reverseString(s.tail) + s.head
     }
 
-
     //求n的阶乘
     def factorial(n: Int):Int = {
       if (n == 0) 1
