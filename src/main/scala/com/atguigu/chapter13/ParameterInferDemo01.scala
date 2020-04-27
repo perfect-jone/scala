@@ -3,7 +3,7 @@ package com.atguigu.chapter13
 object ParameterInferDemo01 {
   def main(args: Array[String]): Unit = {
     /**
-      * 参数类型推断：
+      * 匿名函数参数类型推断：
       * 1.参数类型可以推断时，可以省略参数类型
       * 2.当传入的参数只有单个时，可以省略小括号
       * 3.当=>后面的变量只出现一次时，可以省略后面的变量，用_代替
