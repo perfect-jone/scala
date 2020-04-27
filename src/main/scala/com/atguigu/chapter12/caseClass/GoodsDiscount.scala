@@ -12,7 +12,7 @@ object GoodsDiscount {
     }
 
     val res2 = sale match {
-      // art@Book(_, _) @ 表示将嵌套的值绑定到变量art，art表示Book对象的名字，
+      // art2@Book(_, _) @ 表示将嵌套的值绑定到变量art2，art2表示Book对象的名字，
       case Bundle(_, _, art2@Book(_, _), rest2@_*) => (art2, rest2)
     }
     println(res2)
