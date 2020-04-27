@@ -1,6 +1,7 @@
 package com.atguigu.chapter10
 
 import scala.collection.mutable
+import scala.collection.mutable.ArrayBuffer
 
 object SetDemo01 {
   def main(args: Array[String]): Unit = {
@@ -28,5 +29,7 @@ object SetDemo01 {
     println(list.min+"\t"+list.max+"\t"+list.sum+"\t"+(list.sum.toDouble/list.size.toDouble)) //ListBuffer集合的最大值、最小值、和、平均值
     println(list.head+"\t"+list.last+"\t"+list.tail) //头元素、尾元素、tail(去掉第一个元素的剩余集合)
 
+    val ab = ArrayBuffer[Int](1,2,3,4)
+    println(ab.head+"\t"+ab.last+"\t"+ab.tail)
   }
 }

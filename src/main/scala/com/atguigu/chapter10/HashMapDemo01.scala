@@ -23,7 +23,7 @@ object HashMapDemo01 {
     println("map4"+map4)
 
     //创建空的HashMap
-    val map3 = new scala.collection.mutable.HashMap[Int, String]()
+    val map3 = mutable.HashMap[Int, String]()
     println("map3"+map3)
   }
 }

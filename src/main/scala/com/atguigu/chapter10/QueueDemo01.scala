@@ -5,12 +5,13 @@ import scala.collection.mutable
 
 object QueueDemo01 {
   def main(args: Array[String]): Unit = {
-    val q1 = new mutable.Queue[Int]
+    val q1 = mutable.Queue[Int]()
     //追加元素
     q1 += 1
     q1 += 2
 
     q1 ++= List(3,4,5)
+    println(q1)
 
     //获取元素
     println("q1(0)="+q1(0))

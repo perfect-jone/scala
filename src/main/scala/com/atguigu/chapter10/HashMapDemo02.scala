@@ -44,6 +44,7 @@ object HashMapDemo02 {
     map += ("A" -> 100) //如果key存在就更新
     //map + ("A" -> 100)
     map += ("B" -> 2, "C" -> 3)
+    map += (("C",4))
 
     //删除
     map -= ("alice", 1)
