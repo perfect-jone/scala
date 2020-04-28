@@ -25,7 +25,7 @@ object WordCount {
     // .foldLeft(0)(_+_._2) 第一个下划线表示的是的是数组中的key，意思是分别取出其中的Array集合，
     // .foldLeft(0)(_+_._2)表示将Array进行求和，后边括号中的第一个下划线表示的是处事值0，第二个下划线是表示的是元组，._2表示的是元组中的第二个值，即单词出现的次数。
 
-    val map2 = arr.flatMap(_.split(" ")).map((_, 1)).groupBy(_._1).mapValues(_.foldLeft(0)(_ + _._2))
+    val map2 = arr.flatMap(_.split(" ")).map((_, 1)).groupBy(_._1).mapValues(_.foldLeft(0)(_ + _._2)).toList.sortBy(_._2).reverse
     println(map2)
   }
 
