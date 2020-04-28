@@ -23,5 +23,8 @@ object Recursion01 {
     val now2 = new Date()
     val date2 = format.format(now2)
     println("执行后时间date2="+date2)
+
+    val curTime = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date())
+    println("curTime="+curTime)
   }
 }
