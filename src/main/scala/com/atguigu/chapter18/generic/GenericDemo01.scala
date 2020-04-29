@@ -18,7 +18,11 @@ object GenericDemo01 {
   }
 }
 
+//用val修饰变量，该变量就变成了该类的一个可读属性
 class EnglishClass[A, B, C](val classSeason: A, val className: B, val classType: C)
+
+//用样例类，里面有toSring方法，所以不用val修饰属性
+//case class EnglishClass[A, B, C](classSeason: A, className: B, classType: C)
 
 object SeasonEnum extends Enumeration {
   type SeasonEnum = Value
