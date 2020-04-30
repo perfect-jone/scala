@@ -2,8 +2,15 @@ package com.atguigu.chapter07.inheritence
 
 object Inheritence01 {
   def main(args: Array[String]): Unit = {
+
+    val person = new Person
+    person.name
+    person.eatting01()
+
     val student = new Student
+    student.name
     student.sayOk()
+    student.eatting01()
   }
 }
 
@@ -35,6 +42,7 @@ class Person {
 
 //子类继承了父类的所有属性，只是私有的属性不能直接访问，需要设置公共的set/get方法才能访问
 class Student extends Person {
+  eatting02()
   def sayOk(): Unit = {
     this.name = "jone"
     this.age = 18

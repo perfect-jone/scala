@@ -8,6 +8,7 @@ object Override01 {
     //多态遵循动态绑定机制:
     //1.如果调用的是方法，则jvm会将该方法和对象的内存地址绑定
     //2.如果调用的是一个属性，则没有动态绑定机制，在哪里调用，就返回对应值
+    //3.scala中的属性在底层会生成两个方法，类似于setter和getter方法
     val door2: Wood = new Door
     println(door2.s)//door2.s()
     door2.printInfo()

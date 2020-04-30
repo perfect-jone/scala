@@ -13,7 +13,7 @@ package com.atguigu.chapter07.myabstract
 object AnmialDemo {
   def main(args: Array[String]): Unit = {
     val animal = new Animal {
-      override var name: String = _
+      var name: String = _
       override var age: Int = _
 
       override def cry(): Unit = {
@@ -26,8 +26,7 @@ object AnmialDemo {
 
 abstract class Animal {
   var name: String //抽象字段
-  var age: Int
-  //抽象字段
+  var age: Int//抽象字段
   var color: String = "black" //普通字段
 
   def cry() //抽象方法，用abstract修饰运行会报错

@@ -1,17 +1,12 @@
 package com.atguigu.chapter17.decorator
 
+import scala.beans.BeanProperty
+
 //Drink表示饮品，是一个抽象类
 abstract class Drink {
   var description: String = ""
-  var price: Float = 0.0f
+  @BeanProperty var price: Float = 0.0f
 
-  def setPrice(price: Float): Unit = {
-    this.price = price
-  }
-
-  def getPrice(): Float = {
-    this.price
-  }
 
   def setDescription(description: String): Unit = {
     this.description = description

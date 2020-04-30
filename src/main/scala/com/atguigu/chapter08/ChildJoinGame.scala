@@ -2,9 +2,9 @@ package com.atguigu.chapter08
 
 object ChildJoinGame {
   def main(args: Array[String]): Unit = {
-    val child01 = new Child("蜡笔小新")
-    val child02 = new Child("樱桃小丸子")
-    val child03 = new Child("胡图图")
+    val child01 = Child("蜡笔小新")
+    val child02 = Child("樱桃小丸子")
+    val child03 = Child("胡图图")
     Child.joinName(child01)
     Child.joinName(child02)
     Child.joinName(child03)
@@ -19,6 +19,8 @@ class Child(inName: String) {
 
 object Child {
   var totalChildNum = 0
+
+  def apply(inName: String): Child = new Child(inName)
 
   def joinName(child: Child): Unit = {
     printf("%s加入了游戏!\n", child.name)

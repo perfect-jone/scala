@@ -1,5 +1,6 @@
 package com.atguigu.chapter06.oop
 
+//OOP:Object Oriented['ɔːrɪentɪd] Programming
 object Cat {
   def main(args: Array[String]): Unit = {
     val cat = new Cat

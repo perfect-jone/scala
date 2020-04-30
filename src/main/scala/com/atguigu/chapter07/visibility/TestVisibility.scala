@@ -5,7 +5,7 @@ package com.atguigu.chapter07.visibility
   * 2.当方法访问权限为默认时，默认为publicb访问权限
   * 3.private为私有权限，只在类的内部和伴生对象中可用
   * 4.protected为受保护权限，scala中受保护权限比java中更严格，只能所有子类可以访问，同包不可以访问
-  * 5.scala中没有public关键字,即不能用public显示的修饰属性和方法
+  * 5.scala中没有public关键字,即不能用public显式的修饰属性和方法
   * 6.包访问权限，可以扩大访问范围
   */
 object TestVisibility {
