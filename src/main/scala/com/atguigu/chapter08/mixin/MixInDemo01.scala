@@ -10,9 +10,7 @@ object MixInDemo01 {
     l.insert(200)
 
     val l_ = new MySQL_ with Operate3 {
-      override def say(): Unit = {
-        println("say")
-      }
+      override def say(): Unit = println("say")
     }
     l_.insert(300)
     l_.say()
