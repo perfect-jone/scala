@@ -48,11 +48,11 @@ object SparseArr {
     //稀疏数组恢复成原始数组
     val recoverRowSize = sparseArr(0).row
     val recoverColSize = sparseArr(0).col
-    val recoverChessMap = Array.ofDim[Int](recoverColSize,recoverColSize)
+    val recoverChessMap = Array.ofDim[Int](recoverColSize, recoverColSize)
 
-    for (i<- 1 until sparseArr.length) {
+    for (i <- 1 until sparseArr.length) {
       val node = sparseArr(i)
-      recoverChessMap(node.row)(node.col)= node.value
+      recoverChessMap(node.row)(node.col) = node.value
     }
 
     println("---------------稀疏数组恢复成原始数组-----------------")
