@@ -10,7 +10,7 @@ object Demo01 {
         println(r3)
         println(r3.formatted("%.2f"))*/
 
-    //%的运算规则：a % b = a - a/b * b
+    //取余/模 的运算规则一样：a % b = a - a/b * b  取余 向0靠近  取模向负无穷靠近
     /*println(10 % 3)
     println(10 % -3) // 10 % -3 = 10 - (-3) * (-3) = 1
     println(-10 % 3) // -10 - (-3) * 3 = -1

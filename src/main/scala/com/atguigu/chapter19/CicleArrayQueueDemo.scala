@@ -2,10 +2,11 @@ package com.atguigu.chapter19
 
 import scala.io.StdIn
 
-object ArrayQueueDemo {
+// scala取模：%  a % b = a - a / b * b
+object CicleArrayQueueDemo {
   def main(args: Array[String]): Unit = {
     var key = ""
-    val queue = new ArrayQueue(3)
+    val queue = new CicleArrayQueue(3)
     while (true) {
       println("show: 表示显示队列")
       println("add:  表示增加数据到队列")
@@ -37,71 +38,93 @@ object ArrayQueueDemo {
           }
         }
         case "exit" => System.exit(0)
+        case _ => println("什么都没有匹配到")
       }
     }
   }
 }
 
-class ArrayQueue(ArrMaxSize: Int) {
+class CicleArrayQueue(ArrMaxSize: Int) {
   val maxSize = ArrMaxSize
   val arr = new Array[Int](maxSize) //该数组存放数据，模拟队列
-  var front = -1 //队列头，不包含数据
-  var rear = -1 //队列尾，包含数据
-  //判断数组是否空
-  def isEmpty(): Boolean = {
-    front == rear
-  }
+  var front = 0 //队列头元素
+  var rear = 0 //队列尾元素
 
-  //判断数组是否满
+  //判断队列满
   def isFull(): Boolean = {
-    rear == maxSize - 1
+    (rear + 1) % maxSize == front
   }
 
-  //1.显示队列
-  def showQueue(): Unit = {
-    //判断数组是否空
-    if (isEmpty()) {
-      println("队列是空的，没有数据")
-      return
-    }
-    for (i <- front + 1 to rear) {
-      printf("arr[%d]=%d\n", i, arr(i))
-    }
+  //判断队列空
+  def isEmpty(): Boolean = {
+    rear == front
   }
 
-  //2.增加数据到队列
+  //1.向队列中加入元素
   def addQueue(n: Int): Unit = {
-    //判断数组是否满
     if (isFull()) {
       println("队列是满的，不能再增加数据了")
       return
     }
-    rear += 1
     arr(rear) = n
+    //加入元素后，rear向后移动一位，用模的方式
+    rear = (rear + 1) % maxSize
   }
 
-  //3.从队列中取出数据
+  //2.从队列中取出元素
   def getQueue(): Any = {
-    //判断数组是否空
     if (isEmpty()) {
       return new Exception("队列空T^_^T")
     }
-    front += 1
-    arr(front)
+    //取出元素后，front向后移动一位
+    val value = arr(front)
+    front = (front + 1) % maxSize
+    return value
   }
+
+  //3.显示队列
+
+  //队列元素个数
+  def size(): Int = {
+    (rear - front + maxSize) % maxSize
+  }
+
+  def showQueue(): Unit = {
+    if (isEmpty()) {
+      println("队列是空的，没有数据")
+      return
+    }
+    //从frong开始取，队列中有几个元素就取几个，size表示当前队列中有几个元素
+    for (i <- front until front + size()) {
+      printf("arr(%d)=%d\n", i % maxSize, arr(i % maxSize))
+    }
+  }
+
 
   //4.查看队列头元素，但不是改变队列
   def headQueue(): Any = {
     if (isEmpty()) {
       return new Exception("队列空O^_^O")
     }
-    return arr(front + 1)
+    return arr(front)
   }
-
-  /**
-    * 5.分析问题：
-    * 1）没有考虑数据空间的复用
-    * 2）可以将数据通过取模的方式，将数组当成一个环形队列处理
-    * 3）运用算法
-    * */
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
