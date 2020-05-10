@@ -4,7 +4,7 @@ object DimensionalityArray01 {
   def main(args: Array[String]): Unit = {
 
     //3表示3个一维数组，4表示每个一维数组中有4个元素
-    val arrs = Array.ofDim[Double](3,4)
+    val arrs = Array.ofDim[Double](3, 4)
     arrs(0)(0) = 1.1
     arrs(0)(1) = 1.2
     arrs(0)(2) = 1.3
@@ -23,7 +23,15 @@ object DimensionalityArray01 {
 
     for (items <- arrs) {
       for (item <- items) {
-        print(item+"\t")
+        print(item + "\t")
+      }
+      println()
+    }
+
+    println("----------------------------------")
+    for (i <- 0 until arrs.length) {
+      for (j <- 0 until arrs(i).length) {
+        print(arrs(i)(j) + "\t")
       }
       println()
     }

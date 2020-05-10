@@ -23,10 +23,8 @@ object SparseArr {
     //经过稀疏数组保存的棋盘
     val sparseArr = ArrayBuffer[Node]()
     //保存棋盘元数据：rowSize行，colSize列，0默认值暂时不用
-    //sparseArr += new Node(11, 11, 2)
-    var count = 0
-    val node = new Node(rowSize, colSize, count)
-
+    //sparseArr += new Node(rowSize, colSize, 0)
+    val node = new Node(rowSize, colSize, 0)
     sparseArr.append(node)
     for (i <- 0 until chessMap.length) {
       for (j <- 0 until chessMap(i).length) {
@@ -34,7 +32,6 @@ object SparseArr {
           val node = new Node(i, j, chessMap(i)(j))
           //sparseArr += node
           sparseArr.append(node)
-          count += 1
         }
       }
     }
