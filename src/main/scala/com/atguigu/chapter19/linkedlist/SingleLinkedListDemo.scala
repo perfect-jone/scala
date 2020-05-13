@@ -152,15 +152,17 @@ class SingleLinkedList {
   def list(): Unit = {
     isEmpty() //判断当前链表是否为空
     var temp = head.next
-    while (true) {
-      //此处不能写temp.next == null 如果这样写，最后一个节点就遍历不到了
-      if (temp == null) {
-        return
+    breakable {
+      while (true) {
+        //此处不能写temp.next == null 如果这样写，最后一个节点就遍历不到了
+        if (temp == null) {
+          break()
+        }
+        printf("节点信息为：number=%d name=%s nickName=%s\n",
+          temp.number, temp.name, temp.nickName)
+        //表示temp指向下一个节点,如果到了最后一个节点，则执行temp = temp.next后temp == null
+        temp = temp.next
       }
-      printf("节点信息为：number=%d name=%s nickName=%s\n",
-        temp.number, temp.name, temp.nickName)
-      //表示temp指向下一个节点,如果到了最后一个节点，则执行temp = temp.next后temp == null
-      temp = temp.next
     }
   }
 }
