@@ -4,16 +4,16 @@ import util.control.Breaks._
 
 object SingleLinkedListDemo {
   def main(args: Array[String]): Unit = {
-  /*   val node = new HeroNode(1, "张三", "黑子")
-     val node3 = new HeroNode(3, "张三3", "黑子3")
-     val node2 = new HeroNode(2, "张三2", "黑子2")
-     val node4 = new HeroNode(4, "张三4", "黑子4")
-     val singleLinkedList = new SingleLinkedList
-     singleLinkedList.add(node)
-     singleLinkedList.add(node3)
-     singleLinkedList.add(node2)
-     singleLinkedList.add(node4)*/
-
+    /*   val node = new HeroNode(1, "张三", "黑子")
+       val node3 = new HeroNode(3, "张三3", "黑子3")
+       val node2 = new HeroNode(2, "张三2", "黑子2")
+       val node4 = new HeroNode(4, "张三4", "黑子4")
+       val singleLinkedList = new SingleLinkedList
+       singleLinkedList.add(node)
+       singleLinkedList.add(node3)
+       singleLinkedList.add(node2)
+       singleLinkedList.add(node4)*/
+    println("===================测试增加=========================")
     val node1 = new HeroNode(1, "张三", "黑子")
     val node2 = new HeroNode(3, "张三3", "黑子3")
     val node5 = new HeroNode(2, "张三2", "黑子2")
@@ -23,14 +23,15 @@ object SingleLinkedListDemo {
     singleLinkedList.add2(node2)
     singleLinkedList.add2(node5)
     singleLinkedList.add2(node4)
+
     singleLinkedList.list()
-     println("============================================")
-     val node6 = new HeroNode(2, "鲁智深", "花和尚")
-     singleLinkedList.update(node6)
-     singleLinkedList.list()
-     println("==============================================")
-     singleLinkedList.delete(4)
-     singleLinkedList.list()
+    println("===================测试修改=========================")
+    val node6 = new HeroNode(2, "鲁智深", "花和尚")
+    singleLinkedList.update(node6)
+    singleLinkedList.list()
+    println("====================测试删除==========================")
+    singleLinkedList.delete(4)
+    singleLinkedList.list()
   }
 }
 
@@ -108,7 +109,7 @@ class SingleLinkedList {
     breakable {
       while (true) {
         //判断是否到链表最后
-        if (temp.next == null){
+        if (temp.next == null) {
           break()
         }
         if (temp.number == heroNode.number) {
