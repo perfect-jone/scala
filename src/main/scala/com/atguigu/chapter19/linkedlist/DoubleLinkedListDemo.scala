@@ -1,5 +1,6 @@
 package com.atguigu.chapter19.linkedlist
 
+import scala.collection.mutable
 import scala.util.control.Breaks.{break, breakable}
 
 object DoubleLinkedListDemo {
