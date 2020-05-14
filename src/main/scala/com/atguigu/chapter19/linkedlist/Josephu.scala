@@ -70,7 +70,6 @@ class BoyGame() {
       * 2) 将 first 指针移动到 from 这个小孩(helper 对应移动)
       * 3) 开始数 size 个数[first 和 helper 会对应的移动]
       * 4) 删除 first 指向的这个小孩节点
-      * 5) 思路
       */
 
     //  1) 在 first 前面 设计一个辅助指针（helper） , 即将 helper 指针定位到 first 前面，即helper.next == first
