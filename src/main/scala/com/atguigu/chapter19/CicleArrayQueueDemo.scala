@@ -94,7 +94,7 @@ class CicleArrayQueue(ArrMaxSize: Int) {
       println("队列是空的，没有数据")
       return
     }
-    //从frong开始取，队列中有几个元素就取几个，size表示当前队列中有几个元素
+    //从front开始取，队列中有几个元素就取几个，size表示当前队列中有几个元素
     for (i <- front until front + size()) {
       printf("arr(%d)=%d\n", i % maxSize, arr(i % maxSize))
     }
