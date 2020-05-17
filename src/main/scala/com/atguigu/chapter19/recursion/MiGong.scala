@@ -10,10 +10,8 @@ object MiGong {
       *
       */
 
-
     //1.创建一个二维数组用来保存地图,8行7列
     val map = Array.ofDim[Int](8, 7)
-
     //地图的墙
     for (i <- 0 until 8) {
       map(i)(0) = 1
