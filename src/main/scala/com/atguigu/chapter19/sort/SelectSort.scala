@@ -2,7 +2,7 @@ package com.atguigu.chapter19.sort
 
 import java.text.SimpleDateFormat
 import java.util.Date
-
+//8万数据用时3秒
 object SelectSort {
   def main(args: Array[String]): Unit = {
     val arr = new Array[Int](80000)

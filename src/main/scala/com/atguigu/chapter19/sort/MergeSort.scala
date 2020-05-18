@@ -2,8 +2,7 @@ package com.atguigu.chapter19.sort
 
 import java.text.SimpleDateFormat
 import java.util.Date
-
-import com.atguigu.chapter19.sort.QuickSort.quickSort
+//80万数据用时几乎0秒，800万数据用时1秒，8000万数据用时14秒
 
 object MergeSort {
   def main(args: Array[String]): Unit = {

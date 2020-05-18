@@ -2,14 +2,14 @@ package com.atguigu.chapter19.sort
 
 import java.text.SimpleDateFormat
 import java.util.Date
-
+//80万数据用时几乎0秒，800万数据用时1秒，8000万数据用时14秒
 import util.control.Breaks._
 
 object QuickSort {
   def main(args: Array[String]): Unit = {
     val random = new util.Random()
-    val arr = new Array[Int](100000000)
-    for (i <- 0 until 100000000) { //循环的生成随机数
+    val arr = new Array[Int](80000000)
+    for (i <- 0 until 80000000) { //循环的生成随机数
       arr(i) = random.nextInt(80000000) //生产[0,80000000)之间的随机数
     }
 

@@ -2,7 +2,7 @@ package com.atguigu.chapter19.sort
 
 import java.text.SimpleDateFormat
 import java.util.Date
-
+//8万数据用时1秒
 object InsertSort {
   def main(args: Array[String]): Unit = {
 

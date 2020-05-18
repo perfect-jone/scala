@@ -2,7 +2,7 @@ package com.atguigu.chapter19.sort
 
 import java.text.SimpleDateFormat
 import java.util.Date
-
+//8万数据用时10秒
 
 object BubbleSort {
   def main(args: Array[String]): Unit = {
@@ -19,7 +19,7 @@ object BubbleSort {
     bubbleSort(arr)
 
     println("排序后")
-    println(arr.mkString(" "))
+    //println(arr.mkString(" "))
     val date2 = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date())
     println("排序后时间为："+ date2)
   }
