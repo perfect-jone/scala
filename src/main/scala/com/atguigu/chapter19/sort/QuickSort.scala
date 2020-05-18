@@ -2,7 +2,8 @@ package com.atguigu.chapter19.sort
 
 import java.text.SimpleDateFormat
 import java.util.Date
-//80万数据用时几乎0秒，800万数据用时1秒，8000万数据用时14秒
+//80万数据用时几乎0秒，800万数据用时1秒，8000万数据用时14秒，1亿数据用时17秒
+//快速排序和归并排序效率差不多
 import util.control.Breaks._
 
 object QuickSort {
@@ -75,28 +76,4 @@ object QuickSort {
       quickSort(l, right, arr)
     }
   }
-
-
-  /**
-    *   sort(Array[Int])方法通过简明的方式完成了传统的快速排序功能：
-      1、判断参数数组是否为空？如果为空说明排序完成，直接方法参数。
-      2、如果给定的参数数字不为空，取得数组的中间数。
-      3、根据中间数对参数数组进行拆分:调用Array的filter(p: A => Boolean)方法对数组进行分区并生成一个新的数组，
-         "xs filter (pivot >)" 生成一个新的数组只包含小于pivot的数字，
-         "xs filter (pivot ==)"里面的数组只包含等于pivot的数组，
-         "xs filter (pivot <)"则包含大于pivot的数字，通过sort方法的迭代，完成了排序过程。
-      4、通过Array.concat方法合并多个数组，返回排序后的结果就行了。
-
-    */
-  def sort(arr: Array[Int]):Array[Int] = {
-    if(arr.length <= 1)
-      arr
-    else {
-      val pivot = arr(arr.length /2)
-      Array.concat(
-        sort(arr filter (pivot >)), arr filter (pivot ==), sort(arr filter (pivot <))
-      )
-    }
-  }
-
 }

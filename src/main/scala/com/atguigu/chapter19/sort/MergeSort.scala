@@ -2,7 +2,8 @@ package com.atguigu.chapter19.sort
 
 import java.text.SimpleDateFormat
 import java.util.Date
-//80万数据用时几乎0秒，800万数据用时1秒，8000万数据用时14秒
+//80万数据用时几乎0秒，800万数据用时1秒，8000万数据用时14秒，，1亿数据用时17秒
+//快速排序和归并排序效率差不多
 
 object MergeSort {
   def main(args: Array[String]): Unit = {
