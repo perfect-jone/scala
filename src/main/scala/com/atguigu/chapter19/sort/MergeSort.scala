@@ -39,8 +39,7 @@ object MergeSort {
       val mid = (left + right) / 2
       mergeSort(arr, left, mid, temp) // 递归将左边的数据做成有序列表
       mergeSort(arr, mid + 1, right, temp) //递归将右边的数据做成有序列表
-      // merge 是合并的操作
-      merge(arr, left, mid, right, temp)
+      merge(arr, left, mid, right, temp)   // merge 是合并的操作
     }
   }
 
