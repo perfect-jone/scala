@@ -96,7 +96,7 @@ class SingleLinkedList {
       printf("已经存在该英雄，编号是%d\n", heroNode.number)
     } else {
       //没有重复排名
-      heroNode.next = temp.next //先将heroNode指向temp.next,即的后继是temp.next
+      heroNode.next = temp.next //先将heroNode指向temp.next,即heroNode的后继是temp.next
       temp.next = heroNode //再将temp.next指向heroNode,即temp.next的后继是heroNode
     }
   }
