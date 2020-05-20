@@ -1,4 +1,4 @@
-package com.atguigu.chapter19
+package com.atguigu.chapter19.queue
 
 import scala.collection.mutable.ArrayBuffer
 
