@@ -118,7 +118,7 @@ class Node(val no: Int) {
     return resNode
   }
 
-  //中序查找2 和1都可以
+  //中序查找2 和1都可以,推荐使用这个
   def infixOrderSearch(no: Int): Node = {
     if (no < this.no) {
       if (left == null) {
