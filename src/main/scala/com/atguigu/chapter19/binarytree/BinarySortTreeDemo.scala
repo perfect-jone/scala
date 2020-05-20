@@ -1,18 +1,24 @@
 package com.atguigu.chapter19.binarytree
 
-import scala.util.Random
 
 object BinarySortTreeDemo {
   def main(args: Array[String]): Unit = {
-    val arr = Array(7, 3, 10, 12, 5, 1, 9)
+    val arr = Array(7, 3, 10, 12, 5, 1, 9,2)
     val binarySortTree = new BinarySortTree
     for (item <- arr) {
       binarySortTree.add(new Node(item))
     }
     binarySortTree.infixOrder()
-    val node = binarySortTree.infixOrderSearch(12)
+    /*    val node = binarySortTree.infixOrderSearch(12)
+        if (node != null) {
+          printf("找到,节点信息为：no=%d", node.no)
+        } else {
+          println("找不到T^_^T")
+        }*/
+
+    val node = binarySortTree.searchParent(2)
     if (node != null) {
-      printf("找到,节点信息为：no=%d", node.no)
+      printf("找到,父节点信息为：no=%d", node.no)
     } else {
       println("找不到T^_^T")
     }
@@ -44,6 +50,15 @@ class BinarySortTree {
   def infixOrderSearch(no: Int): Node = {
     if (root != null) {
       root.infixOrderSearch(no)
+    } else {
+      return null
+    }
+  }
+
+  //查找父节点
+  def searchParent(no: Int): Node = {
+    if (root != null) {
+      return root.searchParent(no)
     } else {
       return null
     }
@@ -102,21 +117,38 @@ class Node(val no: Int) {
     }
     return resNode
   }
+
   //中序查找2 和1都可以
   def infixOrderSearch(no: Int): Node = {
     if (no < this.no) {
       if (left == null) {
         return null
-      }else {
+      } else {
         return left.infixOrderSearch(no)
       }
-    }else if(no == this.no) {
+    } else if (no == this.no) {
       return this
-    }else {
+    } else {
       if (right == null) {
         return null
-      }else {
+      } else {
         return right.infixOrderSearch(no)
+      }
+    }
+  }
+
+  //查找父节点
+  def searchParent(no: Int): Node = {
+    //判断当前节点的左节点或者父节点是否是这个值，如果是则返回当前节点
+    if ((left != null && left.no == no) || (right != null && right.no == no)) {
+      return this
+    } else {
+      if (left != null && no < this.no) { //向左递归查找
+        return left.searchParent(no)
+      } else if (right != null && no > this.no) { //向右递归查找
+        return right.searchParent(no)
+      } else {
+        return null
       }
     }
   }
