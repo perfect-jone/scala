@@ -99,6 +99,10 @@ class BinarySortTree {
     }
     //查找要删除节点的父节点
     val parentNode = searchParent(no)
+    if (parentNode == null) { //说明是根节点
+      root = null
+      return
+    }
 
     //删除节点
     if (targetNode.left == null && targetNode.right == null) { //1.删除叶子节点
