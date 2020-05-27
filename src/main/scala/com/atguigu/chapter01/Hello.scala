@@ -18,6 +18,7 @@ package com.atguigu.chapter01
 * Alt+Insert 快速新建类
 * Ctrl+F  Ctrl+R 当前页查找替换
 *
+*
 * psvm  java main函数快捷键
 * sout  java 打印输出快捷键
 * Ctrl+Alt+A  git add添加至暂存区
